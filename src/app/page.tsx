@@ -11,10 +11,7 @@ import {
   InputLabel,
   InputAdornment,
 } from "@mui/material";
-import { useEffect, useState } from "react";
-import CompleteProfile from "./components/CompleteProfile";
-import { useRouter } from "next/navigation";
-import { fetchUser } from "./sign-in/[[...sign-in]]/actions";
+import { useState } from "react";
 
 export default function Home() {
   const [city, setCity] = useState("");

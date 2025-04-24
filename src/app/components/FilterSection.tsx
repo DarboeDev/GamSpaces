@@ -9,7 +9,7 @@ import {
 } from "@mui/material";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import SearchIcon from "@mui/icons-material/Search";
-import { Bathroom } from "@mui/icons-material";
+// import { Bathroom } from "@mui/icons-material";
 
 interface FilterSectionProps {
   city: string;
@@ -21,8 +21,8 @@ interface FilterSectionProps {
 const FilterSection: React.FC<FilterSectionProps> = ({
   city,
   setCity,
-  action,
-  setAction,
+  // action,
+  // setAction,
 }) => {
   const [propertyType, setPropertyType] = useState("all");
   const [priceRange, setPriceRange] = useState("");

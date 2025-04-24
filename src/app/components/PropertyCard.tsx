@@ -1,10 +1,9 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import BedIcon from "@mui/icons-material/Bed";
 import CropIcon from "@mui/icons-material/Crop";
 import Image from "next/image";
-import { Bathtub, LocationOnTwoTone, Close } from "@mui/icons-material";
-import Modal from "./modal";
+import { Bathtub, LocationOnTwoTone } from "@mui/icons-material";
 import { useRouter } from "next/navigation";
 
 interface Property {
@@ -21,8 +20,6 @@ interface Property {
 }
 
 const PropertyCard: React.FC<{ property: Property }> = ({ property }) => {
-  const [showModal, setShowModal] = useState(false);
-
   const router = useRouter();
   const handleCardClick = () => {
     router.push(`/properties/${property.id}`);

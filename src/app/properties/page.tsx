@@ -25,6 +25,7 @@ interface Properties {
 const Page = () => {
   const [city, setCity] = useState("");
   const [action, setAction] = useState("");
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [properties, setProperties] = useState<Properties[]>([
     {
       id: 1,
